@@ -29,7 +29,7 @@ const useVideo = (defaultSearchTerm) => {
     // hook for serch API
     const respnse = await youtube.get("/search", {
       params: {
-        Q: term,
+        q: term,
       },
     });
     // set state
